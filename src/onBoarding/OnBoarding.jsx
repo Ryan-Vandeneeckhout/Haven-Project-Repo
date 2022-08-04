@@ -42,7 +42,8 @@ const OnBoarding = (props) => {
             <Route extact path="/flu" element={<OnBoardingProfileFLUNames setUserName={setUserName} setFirstName={setFirstName} userName={userName} firstName={firstName} lastName={lastName} setLastName={setLastName} passData={passData} />} />
             <Route extact path="/location" element={<OnBoardingCountrySelector passData={passData} setCountry={setCountry} />} />
             <Route extact path="/pronouns" element={<OnBoardingPronouns setPronouns={setPronouns} pronouns={pronouns} passData={passData} />} />
-            <Route extact path="/terms" element={<TermsandConditionsNewUser passData={passData} />} />
+              <Route extact path="/terms" element={<TermsandConditionsNewUser passData={passData} />} />
+              <Route extact path="/logging" element={<OnBoardingCreateUser LoadingScreenClicked={props.LoadingScreenClicked} setAuth={props.setAuth} />} />
             <Route extact path="/createuser" element={<OnBoardingCreateUser LoadingScreenClicked={props.LoadingScreenClicked} setAuth={props.setAuth} />} />
           </Routes>
           </div>

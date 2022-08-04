@@ -6,11 +6,12 @@ const OnBoardingCreateUser = (props) => {
   const LoadingScreenLoaded = () => {
     setTimeout(function () {
       setText("Success");
-      props.setAuth();
+   
     }, 4000);
     setTimeout(function () {
         setText("Redirecting to Home");
-        props.LoadingScreenClicked();
+      props.LoadingScreenClicked();
+      props.setAuth();
     }, 4000);
       
   };

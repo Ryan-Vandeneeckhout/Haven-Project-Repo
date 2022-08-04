@@ -40,7 +40,7 @@ function Home() {
               {productItem.map((post, index) => (
                 <div className="activityItem" key={index}>
                   <h3>{post.title}</h3>
-                  <li className="activityItem">
+                  <li className="middle-row">
                     <p>{post.content}</p>
                     <p>{post.budget}</p>
                   </li>

@@ -1,7 +1,8 @@
 .upperSite {
   width: 100%;
-  background-color: black;
-  color: white;
+  color: black;
+  background-color: white;
+  border-bottom: 1px solid grey;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -15,16 +16,17 @@
     border: none;
     padding: 15px;
     border-radius: 15px;
-    color: white;
+    color: black;
+    background-color: lightgray;
     text-transform: uppercase;
   }
 
   a {
     text-decoration: none;
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-size: 16px;
-    border: solid gold 2px;
+    background-color: lightgray;
     padding: 15px;
     border-radius: 15px;
   }

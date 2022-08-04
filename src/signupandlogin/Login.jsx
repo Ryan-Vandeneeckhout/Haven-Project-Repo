@@ -50,12 +50,16 @@ export default function Login(props) {
         />
         {success ? (
           <NextInput
-            ButtonText={"Continue"}
+            ButtonText={"Log In"}
             ButtonClass={`continueButton signUpAndLogInButton`}
-            Linked={"/interests"}
+            Linked={"/logging"}
           />
         ) : (
-          <button className="submitButton signUpAndLogInButton">Log In</button>
+          <NextInput
+          ButtonText={"Continue"}
+          ButtonClass={`continueButton signUpAndLogInButton`}
+          Linked={"/logging"}
+        />
         )}
       </form>
     </>
