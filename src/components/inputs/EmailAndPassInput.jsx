@@ -8,7 +8,9 @@ export default function EmailAndPasswordInput(props) {
           type={`${props.valueText}`}
           onChange={(e) => props.setValue(e.target.value)}
           placeholder={props.valueInput}
-          value={props.value}
+        value={props.value}
+        ref={props.InputRef}
+        
         />
      
     </div>

@@ -16,7 +16,8 @@ return (
         valueInput={PassText}
         valueText={PassText}
         setValue={props.setPassword}
-        value={props.password}
+      value={props.password}
+      InputRef={props.InputRef}
       />
     </>
   );
