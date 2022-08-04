@@ -1,12 +1,8 @@
-import { useState } from "react";
-import { useRef } from "react";
 import NextInput from "../components/inputs/NextInput";
 import OnBoardingAvatarimg from "./OnBoardingAvatarimg";
 import OnBoardingProgressBar from "./onBoardingProgressBar";
 
 const OnBoardingAvatars = (props) => {
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
 
   let interests, countrylist, statusText, flu, avatars, pronouns, terms;
 
