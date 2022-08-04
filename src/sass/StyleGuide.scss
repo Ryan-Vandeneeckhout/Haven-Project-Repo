@@ -1,0 +1,87 @@
+@import "./variables.scss";
+
+$fontLarge: 98px;
+$fontMedium: clamp(2rem, 1.4595rem + 2.7027vw, 4.5rem);
+$fontMedium2: 32px;
+$fontMedium3: 22px;
+$fontSmall: 16px;
+$fontForm: 26px;
+
+$fontHeadingType: Raleway, Arial, Helvetica, sans-serif;
+$fontBodyType: Raleway, Arial, Helvetica, sans-serif;
+
+@mixin centerItems {
+  justify-content: center;
+  align-items: center;
+}
+p {
+  font-family: "Lato";
+}
+.closed {
+  display: none;
+}
+.opened {
+  display: flex;
+}
+.active {
+  color: black;
+}
+.notActive {
+  color: darkgray;
+}
+.signUpButton {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px;
+}
+.acceptCondtions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+
+  label {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+.promptForm {
+  max-width: 300px;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: solid grey 2px;
+  flex-direction: column;
+
+  p {
+    font-size: 18px;
+    line-height: 29px;
+    text-transform: capitalize;
+    font-family: Raleway;
+  }
+}
+
+.promptFormWrapper {
+  @include FlexColumn;
+  @include Maxsize100;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  padding: 10px;
+
+  button {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background-color: var(--creditscolor);
+    color: white;
+    border-top-left-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}

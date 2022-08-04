@@ -1,0 +1,18 @@
+.Bar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10%;
+  width: 35%;
+  min-width: 100px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+}
+.grey {
+  background-color: grey;
+}
+
+.green {
+  background-color: #66ffa6;
+}

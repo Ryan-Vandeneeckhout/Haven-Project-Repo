@@ -1,0 +1,79 @@
+@import "./StyleGuide.scss";
+@import "./variables.scss";
+
+.upperSite {
+  @include FlexRowCenter;
+  background-color: white;
+  border-bottom: grey solid 1px;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-wrap: wrap;
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    color: black;
+
+    h3 {
+      font-family: "Raleway", Times, serif;
+      font-weight: 600;
+    }
+  }
+
+  ul {
+    @include FlexRowCenter;
+    @include PaddingMargin0;
+    @include UlNormalize;
+    justify-content: space-evenly;
+    padding: 0 5%;
+    width: 100%;
+
+    li {
+      cursor: pointer;
+      box-sizing: border-box;
+      padding: 20px 40px;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    li:hover,
+    li:focus {
+      background-color: lighten(rgb(34, 37, 37), 15%);
+      outline: black solid 1px;
+    }
+
+    li:hover a,
+    li:focus a {
+      color: white;
+      background-color: lighten(rgb(34, 37, 37), 15%);
+    }
+  }
+  .signInText {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+}

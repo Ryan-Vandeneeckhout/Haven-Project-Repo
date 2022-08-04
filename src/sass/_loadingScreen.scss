@@ -1,0 +1,99 @@
+@import "./StyleGuide.scss";
+@import "../sass/variables.scss";
+
+.LoadingScreenSection {
+  background-color: rgb(5, 5, 49);
+  color: white;
+  display: flex;
+  font-family: "Cormorant SC", serif;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  @include centerItems;
+
+  .LoadingScreenCircle {
+    background-color: gold;
+    border-radius: 90%;
+    display: flex;
+    height: 20vw;
+    min-height: 150px;
+    width: 20vw;
+    min-width: 150px;
+    border: white solid 4px;
+    @include centerItems;
+
+    h1 {
+      font-size: 80px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+
+    h2 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 10%;
+    }
+  }
+}
+.createUserLoadingScreen {
+  @include FlexColumn;
+  justify-content: center;
+  min-height: inherit;
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .circleRotating {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    animation: rotation 4s infinite linear;
+  }
+  .arrows {
+    background: url("../../public/assets/arrows.svg");
+    height: 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* loading dots from https://codepen.io/vkjgr/pen/gbPaVx */
+.loading {
+  font-size: 24px;
+}
+.loading:after {
+  content: " .";
+  animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: gold;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 gold, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%,
+  100% {
+    text-shadow: 0.25em 0 0 gold, 0.5em 0 0 gold;
+  }
+}

@@ -1,0 +1,120 @@
+@import "../sass/variables.scss";
+
+.onBoardingWrapper {
+  min-height: 100vh;
+  color: black;
+
+  .wrapper10 {
+    @include FlexColumn;
+    min-height: inherit;
+
+    .signUpAndLoginContainer {
+      @include FlexColumn;
+      justify-content: center;
+      min-height: inherit;
+    }
+    .onBoardingContent {
+      ul {
+        flex-wrap: wrap;
+        @include FlexRowCenter;
+        justify-content: space-between;
+
+        .interestButtons {
+          padding: 15px;
+          border: none;
+          margin: 5px;
+          border-radius: 25px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .clickedTagButton {
+          background-color: #00b249;
+        }
+      }
+    }
+    .onBoardingContentContainer {
+      justify-content: space-between;
+    }
+    h2 {
+      font-family: Raleway;
+      font-size: 30px;
+    }
+
+    .buttonContainer {
+      width: 100%;
+    }
+
+    .backButtonContainer {
+      justify-content: flex-start;
+      display: flex;
+      align-self: flex-end;
+    }
+    .continueButtonContainer {
+      justify-content: flex-end;
+      display: flex;
+    }
+    form {
+      @include FlexColumn;
+      justify-content: space-evenly;
+      .labelsEmail {
+        @include FlexColumn;
+        label {
+          padding: 15px 0;
+          font-family: "Lato";
+          font-weight: bold;
+        }
+
+        input {
+          padding: 15px;
+          border-radius: 15px;
+          width: 100%;
+          background-color: lightgray;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.skipButton {
+  padding: 25px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.nextButton {
+  width: 100px;
+  padding: 25px;
+  padding-left: 0;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;
+}
+
+.onBoardingContentContainer {
+  @include FlexColumn;
+  min-height: inherit;
+  justify-content: space-evenly;
+}
+.onBoardingAvatars {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+}
+.selectedAvatar {
+  outline: solid black 3px;
+}
