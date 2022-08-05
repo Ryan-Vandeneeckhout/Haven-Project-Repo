@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const OnBoardingCreateUser = (props) => {
-  const [text, setText] = useState("Creating User...");
+  const [text, setText] = useState("Creating User");
 
   const LoadingScreenLoaded = () => {
     setTimeout(function () {

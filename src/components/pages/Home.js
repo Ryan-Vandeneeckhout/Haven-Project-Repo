@@ -30,12 +30,35 @@ function Home() {
       });
   }, []);
 
+  const addPost = () => {
+    const body = {
+      title: "The Great Escape",
+      user_id: "1004",
+      content: "The Greatest Escape coem and join us for a great time!1",
+      budget: "None",
+      people_amount: "unlimited",
+    };
+
+    const headers = {
+      "Content-Type": "application/json",
+      token: localStorage.token,
+    };
+    axios
+      .post("https://haven-nodejs.herokuapp.com/activities", body, { headers })
+      .then((jsonResponse) => {
+        setProductItem(jsonResponse.data);
+      });
+  };
+
   const renderActviityPosts = () => {
     // API Return Success //
     if (productItem !== []) {
       return (
         <section className="homeSection">
-          <div className="wrapper10">
+          <div className="wrapper10 homewrapper">
+            <div className="addPost">
+              <button onClick={addPost}>Click to add Post</button>
+            </div>
             <ul className="activityList">
               {productItem.map((post, index) => (
                 <div className="activityItem" key={index}>

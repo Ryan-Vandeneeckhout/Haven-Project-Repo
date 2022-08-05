@@ -26,7 +26,7 @@ export default function Signup(props) {
     if (password === confirmpassword && password.includes("@") && password.length > 4) {
       
       try {
-        const body = { email, password };
+        const body = { email, password, username: "The worlggh" };
         console.log(body);
         const response = await fetch(
           "https://haven-nodejs.herokuapp.com/auth/register",
