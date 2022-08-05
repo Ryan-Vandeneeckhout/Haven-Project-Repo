@@ -3,6 +3,7 @@ import "./sass/_setup.scss";
 import React, { useState, useEffect } from "react";
 import AuthContext from "./context/AuthContext.jsx";
 import LoadingScreen from "./LoadingScreen.jsx";
+import Home from "./components/pages/Home";
 
 function App() {
   const [loadingScreenInView, setLoadingScreenInView] = useState(true);
@@ -57,6 +58,8 @@ function App() {
             <AuthContext LoadingScreenLoadedReload={LoadingScreenLoadedReload} setAuth={setAuth} user={isAuthenticated} />
         )}
         {LoadingScreenLoaded()}
+
+        {/* {<Home />} */}
       </>
     </div>
   );
