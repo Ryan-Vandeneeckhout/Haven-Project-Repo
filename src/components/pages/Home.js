@@ -45,7 +45,6 @@ function Home() {
                     <p>{post.budget}</p>
                   </li>
                   <div className="bottom-row">
-                    <p>{post.budget}</p>
                     <p>{`${post.spots_open}/${post.spots_total} participants`}</p>
                     <button className="join-button">Join Activity!</button>
                   </div>
