@@ -1,6 +1,6 @@
-import "../sass/_landingPage.scss";
+import "../../sass/_landingPage.scss";
 import { useState } from "react";
-import { AxiosGET } from "../axiosCalls/AxiosGET";
+import { AxiosGET } from "../../axiosCalls/AxiosGET";
 
 const LandingPage = () => {
   const [activityItem, setActivityItem] = useState([]);

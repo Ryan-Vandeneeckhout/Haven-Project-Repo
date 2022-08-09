@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import LandingPage from "../pages/LandingPage.jsx";
+import LandingPage from "../pages/HomePagesUserSignin/LandingPage.jsx";
 
 const UserSignInRouting = (props) => {
   window.history.replaceState(true, "Haven Home", "/");

@@ -113,3 +113,8 @@
 .selectedAvatar {
   outline: solid black 3px;
 }
+@media only screen and (max-width: 1850px) {
+  .onBoardingSectionContainer {
+    max-width: 500px;
+  }
+}

@@ -2,9 +2,7 @@ import { ThemeMenuButtonMap } from "../globalMaps/ThemeMenuButtonMap.jsx";
 
 const ThemeMenuChanger = () => {
   let htmlElement = document.documentElement;
-
-
-
+  
   return (
     <>
       {ThemeMenuButtonMap.map((item, index) => {
